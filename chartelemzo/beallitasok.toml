@@ -1,0 +1,22 @@
+# Alapértelmezett beállítások. Felülírható egy ./beallitasok.toml fájllal
+# a munkakönyvtárban, illetve parancssori kapcsolókkal (--be / --ki).
+
+[indikatorok]
+# Ezek futnak alapból. Elérhető: szintek, fibonacci, mozgoatlag, rsi, macd,
+# bollinger, atr, volumenprofil, gyertyaalakzat, trendcsatorna, alakzat, elliott
+alapbol = [
+    "szintek", "fibonacci", "mozgoatlag", "rsi", "macd", "bollinger", "atr",
+    "volumenprofil", "gyertyaalakzat", "trendcsatorna", "alakzat", "elliott",
+]
+
+[elorejelzes]
+# true: a szimuláció enyhén az indikátor-konszenzus irányába sodródik
+irany_sulyozas = true
+
+[ai]
+# Claude keressen-e friss híreket / fundamentumokat a weben
+webes_kereses = true
+
+[abra]
+# Alapból látható modulok a charton (a többi a jelmagyarázatra kattintva kapcsolható be)
+lathato = ["szintek", "mozgoatlag", "alakzat", "rsi", "macd"]
